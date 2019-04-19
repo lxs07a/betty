@@ -44,7 +44,7 @@ function pattern(num1, num2) {
 function updateTree(tree, id, values) {
 
   //make a copy of the deeply frozen object
-  var treeCopy = JSON.parse( JSON.stringify( tree ) );
+  let treeCopy = JSON.parse( JSON.stringify( tree ) );
 
   // Retrieve the property names of the tree object
   const objectPropNames = Object.getOwnPropertyNames(treeCopy);
